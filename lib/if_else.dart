@@ -32,4 +32,22 @@ void main(List<String> args) {
   } else {
     print("Anda sudah dewasa.");
   }
+
+// Menggunakan assert
+  var age = 20;
+  assert(age != 20, "Age must be 20");
+  // Uncaught Error: Assertion failed: "Age must be 22"
+
+  /**
+   * Buatlah program Dart yang meminta pengguna memasukkan sebuah angka. Jika angka tersebut positif, 
+   * tampilkan pesan "Angka positif", jika negatif, tampilkan pesan "Angka negatif", dan jika nol, tampilkan pesan "Angka nol".
+   */
+
+  var number = -1;
+
+  if (number > 0) {
+    print("Angka Positif");
+  } else if(number < 0) {
+    print("Angka Negatif");
+  }
 }
